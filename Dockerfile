@@ -2,7 +2,7 @@ FROM centos:centos6
 
 MAINTAINER Carlos Sanchez <carlos@apache.org>
 
-ENV VERSION 1.9
+ENV VERSION 1.16
 ENV HOME /home/jenkins-slave
 
 #ENV JENKINS_USERNAME jenkins
