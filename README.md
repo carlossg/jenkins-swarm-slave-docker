@@ -1,4 +1,6 @@
-# Jenkins swarm slave `csanchez/jenkins-swarm-slave`
+# Jenkins swarm slave
+
+[`csanchez/jenkins-swarm-slave`](https://registry.hub.docker.com/u/csanchez/jenkins-swarm-slave/)
 
 A CentOS [Jenkins swarm](https://wiki.jenkins-ci.org/display/JENKINS/Swarm+Plugin) slave.
 
