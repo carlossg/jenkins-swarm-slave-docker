@@ -9,10 +9,12 @@ ENV HOME /home/jenkins-slave
 #ENV JENKINS_PASSWORD jenkins
 #ENV JENKINS_MASTER http://jenkins:8080
 
-RUN yum install -y java-1.7.0-openjdk-devel
+RUN yum install -y java-1.7.0-openjdk-devel && yum clean all
 RUN useradd -c "Jenkins Slave user" -d $HOME -m jenkins-slave
-RUN curl -o $HOME/swarm-client-$VERSION-jar-with-dependencies.jar http://maven.jenkins-ci.org/content/repositories/releases/org/jenkins-ci/plugins/swarm-client/$VERSION/swarm-client-$VERSION-jar-with-dependencies.jar
+RUN curl -sSLo $HOME/swarm-client-$VERSION-jar-with-dependencies.jar http://maven.jenkins-ci.org/content/repositories/releases/org/jenkins-ci/plugins/swarm-client/$VERSION/swarm-client-$VERSION-jar-with-dependencies.jar
 
-ADD cmd.sh /cmd.sh
+COPY jenkins-slave.sh /usr/local/bin/jenkins-slave.sh
 
-CMD su jenkins-slave -c '/bin/sh /cmd.sh'
+USER jenkins-slave
+
+CMD ["/usr/local/bin/jenkins-slave.sh"]
