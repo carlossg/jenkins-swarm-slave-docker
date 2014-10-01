@@ -2,7 +2,7 @@ FROM java:7u65
 
 MAINTAINER Carlos Sanchez <carlos@apache.org>
 
-ENV VERSION 1.16
+ENV VERSION 1.17
 ENV HOME /home/jenkins-slave
 
 #ENV JENKINS_USERNAME jenkins
