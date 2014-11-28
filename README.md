@@ -10,7 +10,7 @@ For a container with many build tools installed see `maestrodev/build-agent`
 
 To run a Docker container passing [any parameters](https://wiki.jenkins-ci.org/display/JENKINS/Swarm+Plugin#SwarmPlugin-AvailableOptions) to the slave
 
-    docker run csanchez/jenkins-swarm-slave -master http://jenkins:8080 -username jenkins --password jenkins -executors 1
+    docker run csanchez/jenkins-swarm-slave -master http://jenkins:8080 -username jenkins -password jenkins -executors 1
 
 Linking to the Jenkins master container there is no need to use `--master`
 
