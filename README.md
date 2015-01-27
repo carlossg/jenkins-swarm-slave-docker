@@ -4,7 +4,11 @@
 
 A [Jenkins swarm](https://wiki.jenkins-ci.org/display/JENKINS/Swarm+Plugin) slave.
 
-For a container with many build tools installed see `maestrodev/build-agent`
+For a container with ssh enabled see
+[`csanchez/jenkins-slave`](https://registry.hub.docker.com/u/csanchez/jenkins-slave/)
+
+For a container with many build tools installed see
+[`maestrodev/build-agent`](https://registry.hub.docker.com/u/maestrodev/build-agent/)
 
 ## Running
 
