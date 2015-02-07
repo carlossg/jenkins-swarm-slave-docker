@@ -1,4 +1,4 @@
-FROM java:7u65
+FROM java:8u40-b22-jdk
 
 MAINTAINER Carlos Sanchez <carlos@apache.org>
 
