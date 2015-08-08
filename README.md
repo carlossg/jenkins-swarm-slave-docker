@@ -7,9 +7,6 @@ A [Jenkins swarm](https://wiki.jenkins-ci.org/display/JENKINS/Swarm+Plugin) slav
 For a container with ssh enabled see
 [`csanchez/jenkins-slave`](https://registry.hub.docker.com/u/csanchez/jenkins-slave/)
 
-For a container with many build tools installed see
-[`maestrodev/build-agent`](https://registry.hub.docker.com/u/maestrodev/build-agent/)
-
 ## Running
 
 To run a Docker container passing [any parameters](https://wiki.jenkins-ci.org/display/JENKINS/Swarm+Plugin#SwarmPlugin-AvailableOptions) to the slave
