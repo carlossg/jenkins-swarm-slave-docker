@@ -1,4 +1,4 @@
-FROM java:8u45-jdk
+FROM openjdk:8u102-jdk
 
 MAINTAINER Carlos Sanchez <carlos@apache.org>
 
