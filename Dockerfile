@@ -10,7 +10,7 @@ ENV HOME /home/jenkins-slave
 RUN apt-get update && apt-get install -y net-tools && rm -rf /var/lib/apt/lists/*
 
 RUN useradd -c "Jenkins Slave user" -d $HOME -m jenkins-slave
-RUN curl --create-dirs -sSLo /usr/share/jenkins/swarm-client-$JENKINS_SWARM_VERSION-jar-with-dependencies.jar http://repo.jenkins-ci.org/content/repositories/releases/org/jenkins-ci/plugins/swarm-client/$JENKINS_SWARM_VERSION/swarm-client-$JENKINS_SWARM_VERSION-jar-with-dependencies.jar \
+RUN curl --create-dirs -sSLo /usr/share/jenkins/swarm-client-$JENKINS_SWARM_VERSION-jar-with-dependencies.jar http://repo.jenkins-ci.org/releases/org/jenkins-ci/plugins/swarm-client/$JENKINS_SWARM_VERSION/swarm-client-$JENKINS_SWARM_VERSION-jar-with-dependencies.jar \
   && chmod 755 /usr/share/jenkins
 
 COPY jenkins-slave.sh /usr/local/bin/jenkins-slave.sh
