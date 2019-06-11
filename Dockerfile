@@ -2,7 +2,7 @@ FROM openjdk:8-jdk
 
 MAINTAINER Carlos Sanchez <carlos@apache.org>
 
-ENV JENKINS_SWARM_VERSION 3.15
+ENV JENKINS_SWARM_VERSION 3.17
 ENV HOME /home/jenkins-slave
 
 # install netstat to allow connection health check with
